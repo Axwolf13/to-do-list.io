@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>To-Do List</h1>
+  <button id="addButton" onclick="showPopup()">Add Task</button>
+  <ul id="todoList"></ul>
+
+  <!-- Task popup -->
+  <div id="popup">
+    <div id="popupContent">
+      <h2>Add Task</h2>
+      <input type="text" id="taskInput" placeholder="Enter task...">
+      <button id="addTaskBtn" onclick="addTask(); handleButtonClick();">Add Task</button>
+      <button id="closePopupBtn" onclick="closePopup()">Close</button>
+    </div>
+  </div>
+
+  <script src="js.js"></script>
+</body>
+</html>
